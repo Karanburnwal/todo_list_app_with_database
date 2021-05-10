@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo">
+        <h1 class="header">        
+            Date:<%= name %> 
+        </h1>
+        <div class="lists">
+            
+                <% newItem.map(item=>{ %>
+                    <form action='/delete' method="post">
+                    <li>
+                        <input value=<%=item._id%> type="checkbox"  name='checkbox_id' onchange="this.form.submit()">
+                        <span><%=item.name%></span>
+                    </li>
+                    </form>
+                <%}) %>
+            <form action="/" method="post">
+                <input type="text" name="newItem" placeholder="add new item" autocomplete="off">
+                <button type="submit" name="submit">+</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

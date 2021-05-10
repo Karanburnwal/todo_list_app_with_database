@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* global */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* todo div*/
+
+.todo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  margin-bottom: 2rem;
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  border-radius: 8px;
+  background-color: rgb(166, 57, 240);
+  color: aliceblue;
+}
+
+.todo .lists {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  margin: 5px;
+  font-size: 1.5rem;
+  border: 4px lightblue solid;
+  border-radius: 5px;
+  background-color: rgb(216, 210, 210);
+}
+.todo li {
+  padding: 5px;
+}
+
+input[type="text"] {
+  margin-top: 10px;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px black solid;
+}
+button {
+  cursor: pointer;
+  font-size: 2rem;
+  width: 2.3rem;
+  border-radius: 20px;
+  background-color: rgb(193, 109, 248);
+  color: aliceblue;
+  border: none;
+}
